@@ -1,0 +1,60 @@
+.contact {
+	padding: 140px 0 180px;
+	background-color: $white;
+	background-image: url("./../../assets/images/illustrations-top-background-blue.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&__column  {
+		h1, p {
+			background-color: $white;
+		}
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		line-height: 1.27;
+		letter-spacing: -1px;
+	}
+
+	&__subtitle, &__content {
+		font-size: 22px;
+		font-weight: 500;
+		line-height: 1.36;
+	}
+
+	&__content {
+		margin-left: 30px;
+	}
+
+	&__form {
+		margin-top: 140px;
+	}
+}
+
+@include breakpoint(medium down) {
+	.contact {
+		&__content {
+			margin-left: 0;
+		}
+	}
+}
+
+@include breakpoint(small only) {
+	.contact {
+		padding: 70px 0 90px;
+		background-image: none;
+
+		&__subtitle, &__content {
+			font-size: 18px;
+		}
+
+		&__content {
+			margin-top: 30px;
+		}
+
+		&__form {
+			margin-top: 70px;
+		}
+	}
+}

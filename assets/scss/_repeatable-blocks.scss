@@ -1,0 +1,95 @@
+/* ---------------------------------------
+	Social networks
+--------------------------------------- */
+
+.stay-tuned {
+	@include list-unstyled;
+	margin-right: -5px;
+	margin-left: -5px;
+	width: min-content;
+
+	&__item {
+		display: inline-block;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+	&__link {
+		position: relative;
+		font-weight: 500;
+		line-height: 2;
+		color: $white;
+
+		&:hover {
+			opacity: .5;
+			color: $white;
+		}
+
+		.fab {
+			position: absolute;
+			top: 7px;
+			margin-right: 10px;
+			font-size: 17px;
+
+			&.fa-facebook-square {
+				left: 2px;
+			}
+		}
+	}
+
+	&__title {
+		margin-left: 30px;
+	}
+}
+
+
+@include breakpoint(small only) {
+	.stay-tuned {
+		&__link {
+			font-size: 14px;
+
+			.fab {
+				top: 5px;
+			}
+		}
+	}
+}
+
+/* ---------------------------------------
+	Download links
+--------------------------------------- */
+
+.download-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&__link {
+		margin: 15px;
+	}
+
+	&__img {
+		width: 200px;
+		height: 60px;
+		object-fit: cover;
+		transition: .3s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+
+@include breakpoint(small only) {
+	.download-links {
+		&__link {
+			margin: 13px;
+		}
+
+		&__img {
+			width: 135px;
+			height: 40px;
+		}
+	}
+}

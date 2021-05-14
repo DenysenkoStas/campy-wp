@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="730" height="530" viewBox="0 0 730 530">
+    <defs>
+        <filter id="mblhigvkga" width="120.8%" height="120.8%" x="-10.4%" y="-10.4%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+        </filter>
+        <filter id="rqoprp7bhb" width="122.1%" height="120.8%" x="-11%" y="-10.4%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
+        </filter>
+        <filter id="614q2pislc" width="122.1%" height="120.8%" x="-11%" y="-10.4%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" opacity=".141">
+        <g fill="#75DBCD" fill-rule="nonzero">
+            <g>
+                <g>
+                    <path d="M20.818 437.413c-12.266 3.001-22.228-9.698-15.844-20.195l45.108-74.163-47.828-72.636c-6.77-10.28 2.717-23.3 15.086-20.703l87.387 18.346 57.096-66.098c8.081-9.355 23.907-4.702 25.167 7.4l8.9 85.501 83.115 31.785c11.765 4.5 12.06 20.394.469 25.277l-81.887 34.497-5.727 85.741c-.811 12.137-16.455 17.307-24.878 8.222l-59.51-64.18-86.654 21.206z" filter="url(#mblhigvkga)" transform="translate(-346 -4311) translate(346 4311) translate(51 23)"/>
+                    <path d="M310.83 136.206c-5.791 1.501-10.496-4.848-7.481-10.097l21.3-37.082-22.585-36.317c-3.196-5.14 1.283-11.65 7.124-10.352l41.267 9.173 26.961-33.049c3.817-4.678 11.29-2.351 11.885 3.7l4.203 42.75 39.249 15.893c5.555 2.25 5.694 10.197.22 12.638l-38.668 17.249-2.705 42.87c-.382 6.069-7.77 8.654-11.747 4.112l-28.102-32.09-40.92 10.602z" filter="url(#rqoprp7bhb)" transform="translate(-346 -4311) translate(346 4311) translate(51 23) rotate(-109 369 88)"/>
+                    <path d="M500.83 406.206c-5.791 1.501-10.496-4.848-7.481-10.097l21.3-37.082-22.585-36.317c-3.196-5.14 1.283-11.65 7.124-10.352l41.267 9.173 26.961-33.049c3.817-4.678 11.29-2.351 11.885 3.7l4.203 42.75 39.249 15.893c5.555 2.25 5.694 10.197.22 12.638l-38.668 17.249-2.705 42.87c-.382 6.069-7.77 8.654-11.747 4.112l-28.102-32.09-40.92 10.602z" filter="url(#614q2pislc)" transform="translate(-346 -4311) translate(346 4311) translate(51 23) rotate(-1 559 358)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,189 @@
+/* ---------------------------------------
+	Typography
+--------------------------------------- */
+
+body {
+	font-size: rem-calc(16);
+	background-color: $main-color;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	a {
+		color: inherit;
+	}
+}
+
+h1, .h1 {
+	/*basic heading styles*/
+}
+
+h2, .h2 {
+	/*basic heading styles*/
+}
+
+h3, .h3 {
+	/*basic heading styles*/
+}
+
+h4, .h4 {
+	/*basic heading styles*/
+}
+
+h5, .h5 {
+	/*basic heading styles*/
+}
+
+h6, .h6 {
+	/*basic heading styles*/
+}
+
+p {
+	/*basic paragraph styles*/
+	&:empty {
+		display: none;
+	}
+
+	a {
+		color: $barbie-pink;
+	}
+}
+
+ul {
+	/*basic list styles*/
+	font-size: inherit;
+
+	li {
+		/*basic list-item styles*/
+	}
+}
+
+address {
+	font-style: normal;
+	margin-bottom: $global-margin;
+}
+
+a {
+	color: $main-color;
+	transition: all 0.2s ease-in-out;
+
+	&:hover, &:focus {
+		/*basic hover and focus effects*/
+		color: darken($main-color, 20);
+	}
+}
+
+.page-title {
+	font-weight: 800;
+	line-height: 1.09;
+	letter-spacing: -2.33px;
+	color: #4eead6;
+}
+
+@include breakpoint(small only) {
+	.page-title {
+		line-height: 1;
+		letter-spacing: -1.53px;
+	}
+}
+
+/* ---------------------------------------
+	Forms/Inputs
+--------------------------------------- */
+
+.no-outline {
+	button, a, [tabindex] {
+		outline: none;
+	}
+}
+
+/* Placeholder styling */
+
+input, textarea {
+	&::placeholder {
+		opacity: 1;
+	}
+}
+
+/* Input Styling */
+
+[type=color],
+[type=date],
+[type=datetime-local],
+[type=datetime],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week],
+textarea,
+select,
+.select-styled {
+	$height: ($input-font-size * unitless-calc($input-line-height)) + (get-side($input-padding, 'top') + get-side($input-padding, 'bottom')) + rem-calc(get-border-value($input-border, 'width') * 2);
+	/* STYLES GO THERE */
+	height: 70px;
+	margin-bottom: 0;
+}
+
+textarea[rows] {
+	/*Styles for TextArea*/
+	height: 200px;
+	max-width: 100%;
+}
+
+[type=number] {
+	-moz-appearance: textfield;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+	margin: 0;
+	-webkit-appearance: none;
+}
+
+[type=checkbox],
+[type=file],
+[type=radio] {
+	margin-bottom: 0;
+}
+
+button, .button, input[type='submit'], input[type='reset'], input[type='button'] {
+	border-width: $button-hollow-border-width;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+/* Button additional styles */
+
+.button {
+	min-width: 160px;
+	line-height: 1.75;
+	letter-spacing: 0.4px;
+	font-weight: bold;
+	border-color: $white;
+
+	&.pink {
+		background-color: $barbie-pink;
+		border-color: $barbie-pink;
+	}
+
+	&.short {
+		min-width: auto;
+	}
+
+	&.wide {
+		min-width: 220px;
+	}
+
+	&:hover, &:focus {
+		/*basic hover and focus effects*/
+		color: $seafoam-blue;
+		background-color: $white;
+		border-color: $seafoam-blue;
+	}
+}

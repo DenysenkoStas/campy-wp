@@ -1,0 +1,35 @@
+/* ---------------------------------------
+	TMPL: Default
+--------------------------------------- */
+
+.hero-section {
+	display: flex;
+	align-items: center;
+	padding: 40px 0;
+	min-height: 400px;
+	background-color: $seafoam-blue;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&__title {
+		line-height: 1.27;
+		letter-spacing: -1px;
+	}
+
+	&__subtitle {
+		font-size: 22px;
+		font-weight: 500;
+		line-height: 1.36;
+	}
+}
+
+.default-content {
+	background-color: $white;
+}
+
+@include breakpoint(small only) {
+	.hero-section {
+		min-height: 250px;
+	}
+}

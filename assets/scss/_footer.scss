@@ -1,0 +1,142 @@
+.footer {
+	margin-top: auto;
+	padding: 100px 0 110px;
+	background-color: $black;
+
+	&__logo {
+		margin-bottom: 70px;
+
+		img {
+			max-height: 50px;
+		}
+	}
+
+	&__copy {
+		opacity: .5;
+		font-size: 13px;
+		line-height: 1.54;
+		color: $white;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__menu {
+		@include list-unstyled;
+		column-count: 2;
+		column-gap: 50px;
+
+		.footer-title > a {
+			margin-bottom: 15px;
+			font-weight: bold;
+			line-height: 1.75;
+			letter-spacing: 0.4px;
+			color: $seafoam-blue;
+			cursor: auto;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+		li {
+			a {
+				display: block;
+				font-weight: 500;
+				line-height: 2;
+				color: $white;
+
+				&:hover {
+					opacity: .5;
+				}
+			}
+		}
+
+		.sub-menu {
+			margin-left: 0;
+		}
+	}
+
+	&__sp {
+		margin-left: 50px;
+
+		.sp-title {
+			margin-bottom: 15px;
+			font-weight: bold;
+			line-height: 1.75;
+			letter-spacing: 0.4px;
+			color: $seafoam-blue;
+		}
+	}
+}
+
+// Hide on business page
+.page-template-template-business .hide-on-business {
+	display: none;
+}
+
+@include breakpoint(medium only) {
+	.footer {
+		&__logo {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		&__copy {
+			text-align: center;
+		}
+
+		&__wrapper {
+			justify-content: center;
+			margin-top: 50px;
+		}
+	}
+}
+
+@include breakpoint(medium down) {
+	.footer {
+		padding: 60px 0 50px;
+	}
+}
+
+
+@include breakpoint(small only) {
+	.footer {
+		padding: 60px 0 50px;
+
+		&__wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			margin-bottom: 40px;
+		}
+
+		&__menu {
+			.footer-title > a {
+				font-size: 14px;
+				line-height: 2;
+				letter-spacing: 0.35px;
+			}
+
+			li {
+				a {
+					font-size: 14px;
+				}
+			}
+		}
+
+		&__sp {
+			margin-top: 20px;
+			margin-left: 0;
+			width: 100%;
+
+			.sp-title {
+				font-size: 14px;
+				line-height: 2;
+				letter-spacing: 0.35px;
+			}
+		}
+	}
+}
